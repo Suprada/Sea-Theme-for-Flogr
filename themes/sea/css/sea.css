@@ -1,0 +1,503 @@
+/****************************************
+ * Global
+ ****************************************/
+a img {
+    color: #19162B;
+    border: 0px;
+}
+
+a:link,a:active,a:visited {
+    /*color: #19162B;*/
+	/*color: #592C2C;*/
+	color: #590F33;
+    text-decoration: none;
+    /*text-transform: lowercase;*/
+}
+
+a:hover {
+    color:  #1C425C;
+    border-bottom: 2px solid;
+}
+
+h2 {
+    color: #777;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #000;
+    margin-top: 0;
+    padding-right: 10px;
+}
+
+html,body {
+    margin: 0px 30px 0 30px;
+    padding: 0px 30px;
+    background: #f7f8fd url(sea.jpg) no-repeat center fixed;
+    color: #000;
+    font-size: 11px;
+	text-align: center;
+    /*font-family: "gill sans", verdana, sans-serif;*/
+	font-family: "Calibri";
+	
+}
+
+tr {
+    vertical-align: top;
+    text-align: left;
+}
+
+.no_hover a:hover {
+    border: 0;
+}
+
+.comment {
+
+}
+
+.comment_author {
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.comment_content {
+    margin-left: 2px;
+    padding-left: 2px;
+}
+
+.comment_date {
+
+}
+
+/****************************************
+* Map Page
+*****************************************/
+
+#map {
+	padding: 5px auto;
+	margin: 5px auto;
+	width:800px;
+	height:600px;
+}
+
+
+/****************************************
+ * Photo page
+ ****************************************/
+.photo {
+	padding: 10px 0;
+	margin: 10px 0;
+}
+
+.photo #prevLink,.photo #nextLink {
+    display: block;
+    position: absolute;
+    top: 15;
+    width: 50%;
+    height: 100%;
+    outline: none;
+}
+
+.photo #prevLink {
+    left: 0;
+}
+
+.photo #prevLink:hover {
+    background: transparent url(prevlabel.gif) no-repeat 20% 25%;
+    border: 0px;
+}
+
+.photo #nextLink {
+    right: 0;
+}
+
+.photo #nextLink:hover {
+    background: transparent url(nextlabel.gif) no-repeat 80% 25%;
+    border: 0px;
+}
+
+/****************************************
+ * Tags
+ ****************************************/
+#tag_container {
+    max-width: 1000px;
+	margin: 0 auto;
+    padding: 0px;
+    text-align: center;
+    line-height: 3.0em;
+}
+
+.tag_xlarge {
+    font-size: 3.0em;
+    color: #344034;
+    font-weight: 500;
+	padding: 3px;
+}
+
+.tag_large {
+    font-size: 2.5em;
+    color: #68733F;
+    font-weight: 400;
+	padding: 3px;
+}
+
+.tag_medium {
+    font-size: 2.0em;
+    /*color: #BBB;*/
+	color: #73613F;
+	font-weight: 300;
+	padding: 3px;
+}
+
+.tag_small {
+    font-size: 1.5em;
+    /*color: #999;*/
+	color: #402D16;
+    font-weight: 200;
+	padding: 3px;
+}
+
+.tag_xsmall {
+    font-size: 1.2em;
+    color: #8C3535;
+    font-weight: 100;
+	padding: 3px;
+}
+
+/****************************************
+ * Thumbnails
+ ****************************************/
+#thumbnail_container {
+    width: 100%;
+    padding: 5px;
+	overflow: hidden;
+    text-align: center;
+	margin: 5px;
+}
+
+#thumbnail_container table tr td{
+	font-size: 14px;
+}
+
+#thumbnail_container table2 tr td{
+	font-size: 1.2em;
+}
+
+#thumbnail_container a:hover {
+    border: 0;
+}
+
+#thumbnail_container table {
+    padding: 0 25px;
+	margin: 0 25px;
+	width: 40%;
+	float: left;
+    text-align: left;
+}
+
+#thumbnail_container table2 {
+    width: 30%;
+	text-align: left;
+}
+
+#format_thumbnail{
+	width: 250px;
+	height: 298px;
+	padding: 5px 15px 5px 15px;
+	float: left;
+	line-height: 1px;
+	align: center;
+	font-size: 13.5px;
+	/*font-weight: bold;*/
+}
+.thumbnail {
+    padding: 0px;
+    margin: 15px;
+    /*background: #ddd;
+    border: 2px solid #000;*/
+    border-bottom: 2px solid #000;
+	border-right: 2px solid #000;
+	border-top: 1px solid #000;
+	border-left: 1px solid #000;
+}
+
+.thumbnail:hover {
+    padding: 0px;
+    margin: 15px;
+}
+
+/****************************************
+ * Tool tips
+ ****************************************/
+.tip {
+    color: #000;
+    width: 250px;
+    z-index: 1300;
+    opacity: .9;
+}
+
+.tip-title {
+    font-weight: bold;
+    font-size: 11px;
+    margin: 0;
+    padding: 8px 8px 4px;
+    /*background: #222;*/
+}
+
+.tip-text {
+    font-size: 11px;
+    padding: 4px 8px 8px;
+    background: #333;
+}
+
+#centercontent {
+    float: left;
+    font-size: 1em;
+    /*background: #fff;*/
+    padding-bottom: 5px;
+	width: 100%;
+}
+
+#comment_description {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#comment_thumb {
+    /*background: #000;*/
+	/*background: #fff;*/
+    padding: 1px;
+    float: right;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+#comment_title {
+    font-size: 1.5em;
+    border-bottom: 1px solid;
+    text-transform: lowercase;
+}
+
+/** **/
+#comment_wrapper {
+    width: 340px;
+    padding: 5px;
+}
+
+/****************************************
+ * Layout
+ ****************************************/
+#container {
+    /*position: relative;
+    margin: 5px;*/
+	margin: 12px auto 0 auto;
+	padding: 10px 50px 0px 0px;
+	/*width: 100%;*/
+	border: 0px 5px 5px 5px;
+	height: 100%;
+	overflow: hidden;
+}
+
+#footer {
+    margin: 10px auto 30px auto;
+	padding: 4px 10px 30px 10px;
+	/*width: 78%;*/
+	height: 15px;
+    text-align: center;
+    /*color: #666;*/
+	border-top: #19162B dotted 1px;
+    font-size: 1.0em;
+    float: /*left;*/
+}
+
+#footer a:hover {
+    color: #000;
+}
+
+#header {
+    float: right;
+	width: 100%;
+    /*font-size: 1.0em;*/
+    /*background: #C5D9F1;*/
+    padding: 5px 0 0 0;
+	margin: 5px auto 0 auto;
+}
+
+#header_menu {
+    float: right;
+    font-size: 11pt;
+	margin: 4px;
+    padding: 4px;
+	vertical-align: text-bottom;
+}
+
+#header_menu li {
+    padding: 0px 0px 0px 3px;
+    display: inline;
+}
+
+#header_menu .selected {
+    border-bottom: 2px solid;
+    padding-bottom: 2px;
+}
+
+/****************************************
+ * Header
+ ****************************************/
+#header_title {
+    float: left;
+	padding: 5px;
+	margin: 5px;
+	font-size: 36px;
+	font-family: "Copperplate Gothic Light";
+	font-variant:small-caps;
+}
+#header_title2 {
+    float: left;
+	padding: 10px 0px 0px 0px;
+	margin: 15px 5px 5px 1px;
+	font-size: 18px;
+	font-family: "Copperplate Gothic Light";
+	font-variant:small-caps;
+}
+
+/****************************************
+ * Comments
+ ****************************************/
+#info_comments {
+    position: absolute;
+    z-index: 99;
+    background: #1e1e1e;
+    overflow: auto;
+    text-align: left;
+    top: 15px;
+    left: 15px;
+    right: 10px;
+    bottom: 15px;
+    padding: 15px;
+    opacity: .85;
+    filter: alpha(opacity=85);
+    border: 10px solid #333;
+    visibility: hidden;
+}
+
+
+
+#info_comments .clear {
+    clear: both;
+    position: relative;
+}
+
+
+#info_comments .tags li {
+    list-style-type: none;
+    display: inline;
+    padding-right: 4px;
+}
+
+#info_comments li {
+    list-style-type: none;
+    padding-bottom: 15px;
+}
+
+.close {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    display: block;
+}
+
+#info_comments .heading {
+    font-size: 1.6em;
+    border-bottom: 1px solid;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+#info_comments .thumb img {
+    border: 2px solid;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    float: left;
+}
+
+#info_comments tr.alt {
+    background: #ddd;
+}
+
+#comment_form {
+    display: none;
+}
+
+#leftcontent {
+    float: left;
+	
+}
+
+#page {
+    /*background: #000;*/
+	/*background: #fff;*/
+    padding: 20px 10px 10px 10px;
+    width: 100%;
+    text-align: center;
+    /*position: relative;*/
+    clear: both;
+}
+
+/****************************************
+ * Pages
+ ****************************************/
+#page_header {
+    /*background: #BEDBED;*/
+    padding: 10px 2px 10px 10px;
+    /*width: 98.5%;*/
+	text-align: left;
+	border-bottom: #19162B dotted 1px;
+	border-top: #19162B dotted 1px;
+}
+
+#page_meta,#page_meta a {
+    text-align: center;
+    clear: both;
+    white-space: nowrap;
+    /*width: 765px;*/
+    padding: 5px;
+}
+
+#page_nav {
+    padding: 5px;
+    float: right;
+}
+
+#page_nav a{
+	padding: 5px;
+	margin: 5px;
+}
+
+#page_title {
+    font-size: 2.0em;
+    /*text-transform: lowercase;
+    font-family: Verdana, sans-serif;*/
+}
+
+#page2 {
+    /*background: #444;*/
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+#rightcontent {
+    float: right;
+}
+
+#wrapper {
+    text-align: left;
+    margin: 0px auto -15px auto;
+    /*width: 850px;*/
+    padding: 0px;
+}
+
+#wrapper,#photos {
+    padding: 15px 0 15px 0;
+}
